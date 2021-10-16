@@ -9,6 +9,8 @@ import UIKit
 
 protocol Tab1Presentation {
     func present()
+    
+    func push()
 }
 
 class Tab1Presenter: Tab1Presentation {
@@ -27,4 +29,7 @@ class Tab1Presenter: Tab1Presentation {
         router.present()
     }
     
+    func push() {
+        router.push()
+    }
 }
