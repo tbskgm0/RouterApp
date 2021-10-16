@@ -9,13 +9,23 @@
 /* Begin PBXBuildFile section */
 		0549C7D1271A88F20028DDB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0549C7D0271A88F20028DDB5 /* AppDelegate.swift */; };
 		0549C7D3271A88F20028DDB5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0549C7D2271A88F20028DDB5 /* SceneDelegate.swift */; };
-		0549C7D5271A88F20028DDB5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0549C7D4271A88F20028DDB5 /* ViewController.swift */; };
-		0549C7D8271A88F20028DDB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0549C7D6271A88F20028DDB5 /* Main.storyboard */; };
 		0549C7DA271A88F30028DDB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0549C7D9271A88F30028DDB5 /* Assets.xcassets */; };
 		0549C7DD271A88F30028DDB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0549C7DB271A88F30028DDB5 /* LaunchScreen.storyboard */; };
 		0549C7E8271A88F40028DDB5 /* RouterAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0549C7E7271A88F40028DDB5 /* RouterAppTests.swift */; };
 		0549C7F2271A88F40028DDB5 /* RouterAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0549C7F1271A88F40028DDB5 /* RouterAppUITests.swift */; };
 		0549C7F4271A88F40028DDB5 /* RouterAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0549C7F3271A88F40028DDB5 /* RouterAppUITestsLaunchTests.swift */; };
+		0549C801271A892D0028DDB5 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0549C800271A892D0028DDB5 /* TabBarController.swift */; };
+		0549C806271A89800028DDB5 /* Tab1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0549C805271A89800028DDB5 /* Tab1ViewController.swift */; };
+		0549C808271A898B0028DDB5 /* Tab1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0549C807271A898B0028DDB5 /* Tab1.storyboard */; };
+		0549C80A271A8AF40028DDB5 /* tab1Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0549C809271A8AF40028DDB5 /* tab1Presenter.swift */; };
+		0549C80C271A8AFE0028DDB5 /* Tab1Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0549C80B271A8AFE0028DDB5 /* Tab1Router.swift */; };
+		0549C80F271A8B790028DDB5 /* Transitioner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0549C80E271A8B790028DDB5 /* Transitioner.swift */; };
+		0549C812271A8DE20028DDB5 /* Tab1SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0549C811271A8DE20028DDB5 /* Tab1SecondViewController.swift */; };
+		0549C814271A8DEE0028DDB5 /* Tab1Second.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0549C813271A8DEE0028DDB5 /* Tab1Second.storyboard */; };
+		0549C816271A9A240028DDB5 /* TabBarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0549C815271A9A240028DDB5 /* TabBarController.storyboard */; };
+		054B0550271AACDA00B0A4D6 /* Tab1SecondPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054B054F271AACDA00B0A4D6 /* Tab1SecondPresenter.swift */; };
+		054B0552271AADE500B0A4D6 /* Tab1SecondRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054B0551271AADE500B0A4D6 /* Tab1SecondRouter.swift */; };
+		054BC873271A9CB10065A0B1 /* TabBarRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054BC872271A9CB10065A0B1 /* TabBarRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +49,6 @@
 		0549C7CD271A88F20028DDB5 /* RouterApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RouterApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0549C7D0271A88F20028DDB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0549C7D2271A88F20028DDB5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0549C7D4271A88F20028DDB5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0549C7D7271A88F20028DDB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0549C7D9271A88F30028DDB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0549C7DC271A88F30028DDB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0549C7DE271A88F30028DDB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +57,18 @@
 		0549C7ED271A88F40028DDB5 /* RouterAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RouterAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0549C7F1271A88F40028DDB5 /* RouterAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterAppUITests.swift; sourceTree = "<group>"; };
 		0549C7F3271A88F40028DDB5 /* RouterAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0549C800271A892D0028DDB5 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		0549C805271A89800028DDB5 /* Tab1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab1ViewController.swift; sourceTree = "<group>"; };
+		0549C807271A898B0028DDB5 /* Tab1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tab1.storyboard; sourceTree = "<group>"; };
+		0549C809271A8AF40028DDB5 /* tab1Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tab1Presenter.swift; sourceTree = "<group>"; };
+		0549C80B271A8AFE0028DDB5 /* Tab1Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab1Router.swift; sourceTree = "<group>"; };
+		0549C80E271A8B790028DDB5 /* Transitioner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transitioner.swift; sourceTree = "<group>"; };
+		0549C811271A8DE20028DDB5 /* Tab1SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab1SecondViewController.swift; sourceTree = "<group>"; };
+		0549C813271A8DEE0028DDB5 /* Tab1Second.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tab1Second.storyboard; sourceTree = "<group>"; };
+		0549C815271A9A240028DDB5 /* TabBarController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBarController.storyboard; sourceTree = "<group>"; };
+		054B054F271AACDA00B0A4D6 /* Tab1SecondPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab1SecondPresenter.swift; sourceTree = "<group>"; };
+		054B0551271AADE500B0A4D6 /* Tab1SecondRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab1SecondRouter.swift; sourceTree = "<group>"; };
+		054BC872271A9CB10065A0B1 /* TabBarRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +121,8 @@
 			children = (
 				0549C7D0271A88F20028DDB5 /* AppDelegate.swift */,
 				0549C7D2271A88F20028DDB5 /* SceneDelegate.swift */,
-				0549C7D4271A88F20028DDB5 /* ViewController.swift */,
-				0549C7D6271A88F20028DDB5 /* Main.storyboard */,
+				0549C80D271A8B080028DDB5 /* Router */,
+				0549C803271A89490028DDB5 /* Views */,
 				0549C7D9271A88F30028DDB5 /* Assets.xcassets */,
 				0549C7DB271A88F30028DDB5 /* LaunchScreen.storyboard */,
 				0549C7DE271A88F30028DDB5 /* Info.plist */,
@@ -125,6 +145,57 @@
 				0549C7F3271A88F40028DDB5 /* RouterAppUITestsLaunchTests.swift */,
 			);
 			path = RouterAppUITests;
+			sourceTree = "<group>";
+		};
+		0549C802271A89330028DDB5 /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				0549C800271A892D0028DDB5 /* TabBarController.swift */,
+				0549C815271A9A240028DDB5 /* TabBarController.storyboard */,
+			);
+			path = TabBarController;
+			sourceTree = "<group>";
+		};
+		0549C803271A89490028DDB5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0549C802271A89330028DDB5 /* TabBarController */,
+				0549C804271A895E0028DDB5 /* Tab1 */,
+				0549C810271A8DC90028DDB5 /* Tab1Second */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0549C804271A895E0028DDB5 /* Tab1 */ = {
+			isa = PBXGroup;
+			children = (
+				0549C805271A89800028DDB5 /* Tab1ViewController.swift */,
+				0549C809271A8AF40028DDB5 /* tab1Presenter.swift */,
+				0549C807271A898B0028DDB5 /* Tab1.storyboard */,
+			);
+			path = Tab1;
+			sourceTree = "<group>";
+		};
+		0549C80D271A8B080028DDB5 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				0549C80E271A8B790028DDB5 /* Transitioner.swift */,
+				054BC872271A9CB10065A0B1 /* TabBarRouter.swift */,
+				0549C80B271A8AFE0028DDB5 /* Tab1Router.swift */,
+				054B0551271AADE500B0A4D6 /* Tab1SecondRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		0549C810271A8DC90028DDB5 /* Tab1Second */ = {
+			isa = PBXGroup;
+			children = (
+				0549C811271A8DE20028DDB5 /* Tab1SecondViewController.swift */,
+				054B054F271AACDA00B0A4D6 /* Tab1SecondPresenter.swift */,
+				0549C813271A8DEE0028DDB5 /* Tab1Second.storyboard */,
+			);
+			name = Tab1Second;
+			path = Tab1;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,9 +302,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0549C816271A9A240028DDB5 /* TabBarController.storyboard in Resources */,
+				0549C814271A8DEE0028DDB5 /* Tab1Second.storyboard in Resources */,
 				0549C7DD271A88F30028DDB5 /* LaunchScreen.storyboard in Resources */,
 				0549C7DA271A88F30028DDB5 /* Assets.xcassets in Resources */,
-				0549C7D8271A88F20028DDB5 /* Main.storyboard in Resources */,
+				0549C808271A898B0028DDB5 /* Tab1.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +331,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0549C7D5271A88F20028DDB5 /* ViewController.swift in Sources */,
+				0549C80C271A8AFE0028DDB5 /* Tab1Router.swift in Sources */,
+				0549C801271A892D0028DDB5 /* TabBarController.swift in Sources */,
+				054B0550271AACDA00B0A4D6 /* Tab1SecondPresenter.swift in Sources */,
+				054B0552271AADE500B0A4D6 /* Tab1SecondRouter.swift in Sources */,
+				0549C812271A8DE20028DDB5 /* Tab1SecondViewController.swift in Sources */,
+				054BC873271A9CB10065A0B1 /* TabBarRouter.swift in Sources */,
 				0549C7D1271A88F20028DDB5 /* AppDelegate.swift in Sources */,
+				0549C806271A89800028DDB5 /* Tab1ViewController.swift in Sources */,
+				0549C80A271A8AF40028DDB5 /* tab1Presenter.swift in Sources */,
 				0549C7D3271A88F20028DDB5 /* SceneDelegate.swift in Sources */,
+				0549C80F271A8B790028DDB5 /* Transitioner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +378,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0549C7D6271A88F20028DDB5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0549C7D7271A88F20028DDB5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0549C7DB271A88F30028DDB5 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -444,7 +517,7 @@
 				INFOPLIST_FILE = RouterApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -472,7 +545,7 @@
 				INFOPLIST_FILE = RouterApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
