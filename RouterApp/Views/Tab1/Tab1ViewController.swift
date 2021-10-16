@@ -17,7 +17,7 @@ class Tab1ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.presenter = Tab1Presenter(view: self, router: Tab1Router(viewController: self, navigator: self.navigationController!))
+        //self.presenter = Tab1Presenter(view: self, router: Tab1Router(viewController: self, navigator: self.navigationController!))
         // Do any additional setup after loading the view.
     }
     

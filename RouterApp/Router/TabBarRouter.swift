@@ -5,23 +5,32 @@
 //  Created by TsubasaKogoma on 2021/10/16.
 //
 
-import Foundation
+import UIKit
 
-/*
+
 protocol TabBarWireframe {
-    func dismiss()
-    
-    func push<T>(closure: (_ viewController: T) -> Void)
+    func root()
 }
 class TabBarRouter: TabBarWireframe {
-    func dismiss() {
-        <#code#>
+    private(set) weak var tabBarController: TabBarControllerProtocol!
+    
+    init(tabBar: TabBarControllerProtocol) {
+        self.tabBarController = tabBar
     }
     
-    func push<T>(closure: (T) -> Void) {
-        <#code#>
+    func root() {
+        /// viewの作成
+        let storyboard = UIStoryboard(name: "TabBarController", bundle: nil)
+        let rootViewController = storyboard.instantiateViewController(identifier: "TabBarController") as! TabBarController
+        /// routerの作成
+        let router = TabBarRouter(tabBar: rootViewController)
+        /// presenterの作成
+        let presenter = TabBarPresenter(
+            view: rootViewController,
+            router: router
+        )
+        rootViewController.inject(presenter: presenter)
     }
-    
     
 }
-*/
+

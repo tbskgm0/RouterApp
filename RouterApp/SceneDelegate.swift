@@ -10,21 +10,26 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-    var rootViewController: UITabBarController?
+    //var rootViewController: UITabBarController?
+    
+    //private var appCoordinator: AppCoordinator?
+    private var presenter: TabBarPresentation?
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        guard let _ = (scene as? UIWindowScene) else { return }
-        /*
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
         let window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window.windowScene = windowScene
         
+        let rootViewController: UITabBarController
+        
+        self.window = window
         let storyboard = UIStoryboard(name: "TabBarController", bundle: nil)
-        rootViewController = storyboard.instantiateViewController(withIdentifier: "TabBarController") as! TabBarController
+        rootViewController = storyboard.instantiateViewController(identifier: "TabBarController")
         window.rootViewController = rootViewController
         window.makeKeyAndVisible()
-        */
+        
+        self.window = window
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

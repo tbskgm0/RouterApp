@@ -7,9 +7,11 @@
 
 import UIKit
 
+protocol TabBarControllerProtocol: Transitioner {}
 
 class TabBarController: UITabBarController {
-
+    private var presenter: TabBarPresentation!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,4 +25,9 @@ class TabBarController: UITabBarController {
         */
     }
     
+    func inject(presenter: TabBarPresentation) {
+        self.presenter = presenter
+    }
+    
 }
+extension TabBarController: TabBarControllerProtocol {}

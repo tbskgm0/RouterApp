@@ -17,7 +17,7 @@
 		0549C801271A892D0028DDB5 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0549C800271A892D0028DDB5 /* TabBarController.swift */; };
 		0549C806271A89800028DDB5 /* Tab1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0549C805271A89800028DDB5 /* Tab1ViewController.swift */; };
 		0549C808271A898B0028DDB5 /* Tab1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0549C807271A898B0028DDB5 /* Tab1.storyboard */; };
-		0549C80A271A8AF40028DDB5 /* tab1Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0549C809271A8AF40028DDB5 /* tab1Presenter.swift */; };
+		0549C80A271A8AF40028DDB5 /* Tab1Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0549C809271A8AF40028DDB5 /* Tab1Presenter.swift */; };
 		0549C80C271A8AFE0028DDB5 /* Tab1Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0549C80B271A8AFE0028DDB5 /* Tab1Router.swift */; };
 		0549C80F271A8B790028DDB5 /* Transitioner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0549C80E271A8B790028DDB5 /* Transitioner.swift */; };
 		0549C812271A8DE20028DDB5 /* Tab1SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0549C811271A8DE20028DDB5 /* Tab1SecondViewController.swift */; };
@@ -25,6 +25,7 @@
 		0549C816271A9A240028DDB5 /* TabBarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0549C815271A9A240028DDB5 /* TabBarController.storyboard */; };
 		054B0550271AACDA00B0A4D6 /* Tab1SecondPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054B054F271AACDA00B0A4D6 /* Tab1SecondPresenter.swift */; };
 		054B0552271AADE500B0A4D6 /* Tab1SecondRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054B0551271AADE500B0A4D6 /* Tab1SecondRouter.swift */; };
+		054B0555271AC0A400B0A4D6 /* TabBarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054B0554271AC0A400B0A4D6 /* TabBarPresenter.swift */; };
 		054BC873271A9CB10065A0B1 /* TabBarRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054BC872271A9CB10065A0B1 /* TabBarRouter.swift */; };
 /* End PBXBuildFile section */
 
@@ -60,7 +61,7 @@
 		0549C800271A892D0028DDB5 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		0549C805271A89800028DDB5 /* Tab1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab1ViewController.swift; sourceTree = "<group>"; };
 		0549C807271A898B0028DDB5 /* Tab1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tab1.storyboard; sourceTree = "<group>"; };
-		0549C809271A8AF40028DDB5 /* tab1Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tab1Presenter.swift; sourceTree = "<group>"; };
+		0549C809271A8AF40028DDB5 /* Tab1Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab1Presenter.swift; sourceTree = "<group>"; };
 		0549C80B271A8AFE0028DDB5 /* Tab1Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab1Router.swift; sourceTree = "<group>"; };
 		0549C80E271A8B790028DDB5 /* Transitioner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transitioner.swift; sourceTree = "<group>"; };
 		0549C811271A8DE20028DDB5 /* Tab1SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab1SecondViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +69,7 @@
 		0549C815271A9A240028DDB5 /* TabBarController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBarController.storyboard; sourceTree = "<group>"; };
 		054B054F271AACDA00B0A4D6 /* Tab1SecondPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab1SecondPresenter.swift; sourceTree = "<group>"; };
 		054B0551271AADE500B0A4D6 /* Tab1SecondRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab1SecondRouter.swift; sourceTree = "<group>"; };
+		054B0554271AC0A400B0A4D6 /* TabBarPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarPresenter.swift; sourceTree = "<group>"; };
 		054BC872271A9CB10065A0B1 /* TabBarRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -200,7 +202,8 @@
 		054B0553271ABA2900B0A4D6 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				0549C809271A8AF40028DDB5 /* tab1Presenter.swift */,
+				054B0554271AC0A400B0A4D6 /* TabBarPresenter.swift */,
+				0549C809271A8AF40028DDB5 /* Tab1Presenter.swift */,
 				054B054F271AACDA00B0A4D6 /* Tab1SecondPresenter.swift */,
 			);
 			name = Presenter;
@@ -346,8 +349,9 @@
 				0549C812271A8DE20028DDB5 /* Tab1SecondViewController.swift in Sources */,
 				054BC873271A9CB10065A0B1 /* TabBarRouter.swift in Sources */,
 				0549C7D1271A88F20028DDB5 /* AppDelegate.swift in Sources */,
+				054B0555271AC0A400B0A4D6 /* TabBarPresenter.swift in Sources */,
 				0549C806271A89800028DDB5 /* Tab1ViewController.swift in Sources */,
-				0549C80A271A8AF40028DDB5 /* tab1Presenter.swift in Sources */,
+				0549C80A271A8AF40028DDB5 /* Tab1Presenter.swift in Sources */,
 				0549C7D3271A88F20028DDB5 /* SceneDelegate.swift in Sources */,
 				0549C80F271A8B790028DDB5 /* Transitioner.swift in Sources */,
 			);

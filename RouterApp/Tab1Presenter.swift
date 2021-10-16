@@ -15,13 +15,12 @@ protocol Tab1Presentation {
 
 class Tab1Presenter: Tab1Presentation {
     /// View
-    private weak var view: Tab1ViewProtocol!
-    
+    private weak var tabBarController: TabBarControllerProtocol!
     /// Router
     private let router: Tab1Wireframe
     
-    init(view: Tab1ViewProtocol, router: Tab1Wireframe) {
-        self.view = view
+    init(tabBar: TabBarControllerProtocol, router: Tab1Wireframe) {
+        self.tabBarController = tabBar
         self.router = router
     }
     
