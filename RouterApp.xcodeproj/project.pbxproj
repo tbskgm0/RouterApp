@@ -123,6 +123,7 @@
 				0549C7D2271A88F20028DDB5 /* SceneDelegate.swift */,
 				0549C80D271A8B080028DDB5 /* Router */,
 				0549C803271A89490028DDB5 /* Views */,
+				054B0553271ABA2900B0A4D6 /* Presenter */,
 				0549C7D9271A88F30028DDB5 /* Assets.xcassets */,
 				0549C7DB271A88F30028DDB5 /* LaunchScreen.storyboard */,
 				0549C7DE271A88F30028DDB5 /* Info.plist */,
@@ -170,7 +171,6 @@
 			isa = PBXGroup;
 			children = (
 				0549C805271A89800028DDB5 /* Tab1ViewController.swift */,
-				0549C809271A8AF40028DDB5 /* tab1Presenter.swift */,
 				0549C807271A898B0028DDB5 /* Tab1.storyboard */,
 			);
 			path = Tab1;
@@ -191,11 +191,19 @@
 			isa = PBXGroup;
 			children = (
 				0549C811271A8DE20028DDB5 /* Tab1SecondViewController.swift */,
-				054B054F271AACDA00B0A4D6 /* Tab1SecondPresenter.swift */,
 				0549C813271A8DEE0028DDB5 /* Tab1Second.storyboard */,
 			);
 			name = Tab1Second;
 			path = Tab1;
+			sourceTree = "<group>";
+		};
+		054B0553271ABA2900B0A4D6 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				0549C809271A8AF40028DDB5 /* tab1Presenter.swift */,
+				054B054F271AACDA00B0A4D6 /* Tab1SecondPresenter.swift */,
+			);
+			name = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

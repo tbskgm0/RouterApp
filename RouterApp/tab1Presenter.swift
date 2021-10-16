@@ -8,8 +8,6 @@
 import UIKit
 
 protocol Tab1Presentation {
-    func push()
-    
     func present()
 }
 
@@ -23,10 +21,6 @@ class Tab1Presenter: Tab1Presentation {
     init(view: Tab1ViewProtocol, router: Tab1Wireframe) {
         self.view = view
         self.router = router
-    }
-    
-    func push() {
-        router.push()
     }
     
     func present() {

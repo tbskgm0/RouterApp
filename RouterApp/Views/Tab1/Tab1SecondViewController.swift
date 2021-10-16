@@ -9,6 +9,8 @@ import UIKit
 
 class Tab1SecondViewController: UIViewController {
 
+    private var presenter: Tab1SecondPresentation!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -16,6 +18,9 @@ class Tab1SecondViewController: UIViewController {
     }
     
 
+    func inject(presenter: Tab1SecondPresentation) {
+        self.presenter = presenter
+    }
     /*
     // MARK: - Navigation
 
@@ -27,3 +32,4 @@ class Tab1SecondViewController: UIViewController {
     */
 
 }
+extension Tab1SecondViewController: Tab1ViewProtocol {}

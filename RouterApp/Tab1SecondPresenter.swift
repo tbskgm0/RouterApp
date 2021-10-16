@@ -8,23 +8,17 @@
 import UIKit
 
 protocol Tab1SecondPresentation {
-    func push()
-    
     func present()
 }
 class Tab1SecondPresenter: Tab1SecondPresentation {
     /// View
     private weak var view: Tab1ViewProtocol!
     /// Router
-    private let router: Tab1Wireframe
+    private let router: Tab1SecondWireframe
     
-    init(view: Tab1ViewProtocol, router: Tab1Wireframe) {
+    init(view: Tab1ViewProtocol, router: Tab1SecondWireframe) {
         self.view = view
         self.router = router
-    }
-    
-    func push() {
-        router.push()
     }
     
     func present() {
