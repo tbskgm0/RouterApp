@@ -26,6 +26,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         self.window = window
         let storyboard = UIStoryboard(name: "TabBarController", bundle: nil)
         rootViewController = storyboard.instantiateViewController(identifier: "TabBarController")
+        
         window.rootViewController = rootViewController
         window.makeKeyAndVisible()
         

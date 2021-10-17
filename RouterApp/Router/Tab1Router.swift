@@ -11,8 +11,6 @@ import UIKit
 //    case
 //}
 protocol Tab1Wireframe {
-    func present()
-    
     func push()
 }
 
@@ -25,29 +23,10 @@ class Tab1Router: Tab1Wireframe {
         self.navigator = navigator
     }
     
-    func present() {
-        let storyboard = UIStoryboard(name: "Tab1Second", bundle: nil)
-        /// viewの作成
-        let nextViewController = storyboard.instantiateInitialViewController() as! Tab1SecondViewController
-        /// modelの作成
-        //let model = 1
-        /// routerの作成
-        let router = Tab1SecondRouter(viewController: nextViewController)
-        /// presenterの作成
-        let presenter = Tab1SecondPresenter(
-            view: nextViewController,
-            router: router
-        )
-        nextViewController.inject(presenter: presenter)
-        viewController.present(nextViewController, animated: true, completion: nil)
-    }
-    
     func push() {
-        let storyboard = UIStoryboard(name: "Tab1Second", bundle: nil)
         /// viewの作成
+        let storyboard = UIStoryboard(name: "Tab1Second", bundle: nil)
         let nextViewController = storyboard.instantiateInitialViewController() as! Tab1SecondViewController
-        /// modelの作成
-        //let model = 1
         /// routerの作成
         let router = Tab1SecondRouter(viewController: nextViewController)
         /// presenterの作成

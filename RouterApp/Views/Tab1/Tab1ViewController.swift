@@ -21,6 +21,10 @@ class Tab1ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    func inject(presenter: Tab1Presenter) {
+        self.presenter = presenter
+    }
+    
     @IBAction func button(_ sender: Any) {
         presenter.push()
     }

@@ -16,7 +16,6 @@ protocol TabBarPresentation {
 class TabBarPresenter: TabBarPresentation {
     /// View
     private weak var view: TabBarControllerProtocol!
-    
     /// Router
     private let router: TabBarWireframe
     

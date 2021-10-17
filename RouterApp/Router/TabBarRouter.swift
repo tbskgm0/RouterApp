@@ -12,24 +12,25 @@ protocol TabBarWireframe {
     func root()
 }
 class TabBarRouter: TabBarWireframe {
-    private(set) weak var tabBarController: TabBarControllerProtocol!
+    private(set) weak var tabBarController: TabBarController!
     
-    init(tabBar: TabBarControllerProtocol) {
+    init(tabBar: TabBarController) {
         self.tabBarController = tabBar
     }
     
     func root() {
         /// viewの作成
-        let storyboard = UIStoryboard(name: "TabBarController", bundle: nil)
-        let rootViewController = storyboard.instantiateViewController(identifier: "TabBarController") as! TabBarController
+        let storyboard = UIStoryboard(name: "Tab1", bundle: nil)
+        let rootViewController = storyboard.instantiateViewController(identifier: "Tab1") as! Tab1ViewController
         /// routerの作成
-        let router = TabBarRouter(tabBar: rootViewController)
+        let router = Tab1Router(viewController: rootViewController, navigator: rootViewController.navigationController!)
         /// presenterの作成
-        let presenter = TabBarPresenter(
+        let presenter = Tab1Presenter(
             view: rootViewController,
             router: router
         )
         rootViewController.inject(presenter: presenter)
+        tabBarController.viewControllers![0] = rootViewController
     }
     
 }
