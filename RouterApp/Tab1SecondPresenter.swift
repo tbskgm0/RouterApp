@@ -12,11 +12,11 @@ protocol Tab1SecondPresentation {
 }
 class Tab1SecondPresenter: Tab1SecondPresentation {
     /// View
-    private weak var view: Tab1ViewProtocol!
+    private weak var view: Tab1Protocol!
     /// Router
     private let router: Tab1SecondWireframe
     
-    init(view: Tab1ViewProtocol, router: Tab1SecondWireframe) {
+    init(view: Tab1Protocol, router: Tab1SecondWireframe) {
         self.view = view
         self.router = router
     }

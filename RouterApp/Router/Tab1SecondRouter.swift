@@ -13,9 +13,9 @@ protocol Tab1SecondWireframe {
 }
 
 class Tab1SecondRouter: Tab1SecondWireframe {
-    private(set) weak var viewController: Tab1ViewProtocol!
+    private(set) weak var viewController: Tab1Protocol!
     
-    init(viewController: Tab1ViewProtocol) {
+    init(viewController: Tab1Protocol) {
         self.viewController = viewController
     }
     

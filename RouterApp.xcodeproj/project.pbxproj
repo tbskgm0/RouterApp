@@ -26,6 +26,7 @@
 		054B0550271AACDA00B0A4D6 /* Tab1SecondPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054B054F271AACDA00B0A4D6 /* Tab1SecondPresenter.swift */; };
 		054B0552271AADE500B0A4D6 /* Tab1SecondRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054B0551271AADE500B0A4D6 /* Tab1SecondRouter.swift */; };
 		054B0555271AC0A400B0A4D6 /* TabBarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054B0554271AC0A400B0A4D6 /* TabBarPresenter.swift */; };
+		054B0557271ACFBA00B0A4D6 /* SceneRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054B0556271ACFBA00B0A4D6 /* SceneRouter.swift */; };
 		054BC873271A9CB10065A0B1 /* TabBarRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054BC872271A9CB10065A0B1 /* TabBarRouter.swift */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +71,7 @@
 		054B054F271AACDA00B0A4D6 /* Tab1SecondPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab1SecondPresenter.swift; sourceTree = "<group>"; };
 		054B0551271AADE500B0A4D6 /* Tab1SecondRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab1SecondRouter.swift; sourceTree = "<group>"; };
 		054B0554271AC0A400B0A4D6 /* TabBarPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarPresenter.swift; sourceTree = "<group>"; };
+		054B0556271ACFBA00B0A4D6 /* SceneRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneRouter.swift; sourceTree = "<group>"; };
 		054BC872271A9CB10065A0B1 /* TabBarRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -182,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				0549C80E271A8B790028DDB5 /* Transitioner.swift */,
+				054B0556271ACFBA00B0A4D6 /* SceneRouter.swift */,
 				054BC872271A9CB10065A0B1 /* TabBarRouter.swift */,
 				0549C80B271A8AFE0028DDB5 /* Tab1Router.swift */,
 				054B0551271AADE500B0A4D6 /* Tab1SecondRouter.swift */,
@@ -342,6 +345,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				054B0557271ACFBA00B0A4D6 /* SceneRouter.swift in Sources */,
 				0549C80C271A8AFE0028DDB5 /* Tab1Router.swift in Sources */,
 				0549C801271A892D0028DDB5 /* TabBarController.swift in Sources */,
 				054B0550271AACDA00B0A4D6 /* Tab1SecondPresenter.swift in Sources */,

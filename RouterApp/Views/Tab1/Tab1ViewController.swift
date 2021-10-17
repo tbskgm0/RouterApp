@@ -8,7 +8,7 @@
 import UIKit
 
 
-protocol Tab1ViewProtocol: Transitioner {}
+protocol Tab1Protocol: Transitioner {}
 
 class Tab1ViewController: UIViewController {
 
@@ -21,6 +21,10 @@ class Tab1ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    func inject(presenter: Tab1Presentation) {
+        self.presenter = presenter
+    }
+    
     @IBAction func button(_ sender: Any) {
         presenter.push()
     }
@@ -28,4 +32,4 @@ class Tab1ViewController: UIViewController {
 
 // MARK: - extension
 
-extension Tab1ViewController: Tab1ViewProtocol {}
+extension Tab1ViewController: Tab1Protocol {}

@@ -7,7 +7,6 @@
 
 import UIKit
 
-protocol TabBarControllerProtocol: Transitioner {}
 
 class TabBarController: UITabBarController {
     private var presenter: TabBarPresentation!
@@ -30,4 +29,4 @@ class TabBarController: UITabBarController {
     }
     
 }
-extension TabBarController: TabBarControllerProtocol {}
+extension TabBarController: TabBarProtocol {}
