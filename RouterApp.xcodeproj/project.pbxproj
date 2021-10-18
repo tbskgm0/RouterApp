@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0549134C271C6CBB00186516 /* SceneDelegateRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0549134B271C6CBB00186516 /* SceneDelegateRouter.swift */; };
+		0549134E271CFB7300186516 /* SceneDelegatePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0549134D271CFB7300186516 /* SceneDelegatePresenter.swift */; };
 		0549C7D1271A88F20028DDB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0549C7D0271A88F20028DDB5 /* AppDelegate.swift */; };
 		0549C7D3271A88F20028DDB5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0549C7D2271A88F20028DDB5 /* SceneDelegate.swift */; };
 		0549C7DA271A88F30028DDB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0549C7D9271A88F30028DDB5 /* Assets.xcassets */; };
@@ -47,6 +49,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0549134B271C6CBB00186516 /* SceneDelegateRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegateRouter.swift; sourceTree = "<group>"; };
+		0549134D271CFB7300186516 /* SceneDelegatePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegatePresenter.swift; sourceTree = "<group>"; };
 		0549C7CD271A88F20028DDB5 /* RouterApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RouterApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0549C7D0271A88F20028DDB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0549C7D2271A88F20028DDB5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -182,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				0549C80E271A8B790028DDB5 /* Transitioner.swift */,
+				0549134B271C6CBB00186516 /* SceneDelegateRouter.swift */,
 				054BC872271A9CB10065A0B1 /* TabBarRouter.swift */,
 				0549C80B271A8AFE0028DDB5 /* Tab1Router.swift */,
 				054B0551271AADE500B0A4D6 /* Tab1SecondRouter.swift */,
@@ -203,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				054B0554271AC0A400B0A4D6 /* TabBarPresenter.swift */,
+				0549134D271CFB7300186516 /* SceneDelegatePresenter.swift */,
 				0549C809271A8AF40028DDB5 /* Tab1Presenter.swift */,
 				054B054F271AACDA00B0A4D6 /* Tab1SecondPresenter.swift */,
 			);
@@ -344,11 +350,13 @@
 			files = (
 				0549C80C271A8AFE0028DDB5 /* Tab1Router.swift in Sources */,
 				0549C801271A892D0028DDB5 /* TabBarController.swift in Sources */,
+				0549134C271C6CBB00186516 /* SceneDelegateRouter.swift in Sources */,
 				054B0550271AACDA00B0A4D6 /* Tab1SecondPresenter.swift in Sources */,
 				054B0552271AADE500B0A4D6 /* Tab1SecondRouter.swift in Sources */,
 				0549C812271A8DE20028DDB5 /* Tab1SecondViewController.swift in Sources */,
 				054BC873271A9CB10065A0B1 /* TabBarRouter.swift in Sources */,
 				0549C7D1271A88F20028DDB5 /* AppDelegate.swift in Sources */,
+				0549134E271CFB7300186516 /* SceneDelegatePresenter.swift in Sources */,
 				054B0555271AC0A400B0A4D6 /* TabBarPresenter.swift in Sources */,
 				0549C806271A89800028DDB5 /* Tab1ViewController.swift in Sources */,
 				0549C80A271A8AF40028DDB5 /* Tab1Presenter.swift in Sources */,
