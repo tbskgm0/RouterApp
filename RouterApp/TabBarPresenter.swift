@@ -10,7 +10,7 @@ import Foundation
 
 
 protocol TabBarPresentation {
-    func root()
+    func push()
 }
 
 class TabBarPresenter: TabBarPresentation {
@@ -25,7 +25,7 @@ class TabBarPresenter: TabBarPresentation {
         self.router = router
     }
     
-    func root() {
-        router.root()
+    func push() {
+        router.push()
     }
 }

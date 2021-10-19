@@ -14,20 +14,42 @@ class TabBarController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        /*
-        let presenter =
-        if self.viewControllers != nil {
-            for view in self.viewControllers! {
-                view.presenter = Tab1Presenter(view: view as! Tab1ViewProtocol, router: Tab1Router(viewController: <#Tab1ViewProtocol#>))
-            }
-        }
-        */
+        
+        presenter.push()
     }
     
+    /// presenterにDIする
     func inject(presenter: TabBarPresentation) {
         self.presenter = presenter
     }
     
+    /*
+    /// 
+    func push() {
+        let navigationController = self.viewControllers![0] as! UINavigationController
+        let vc = navigationController.topViewController as! Tab1ViewController
+        
+        let router = Tab1Router(
+            viewController: vc,
+            navigator: (vc.navigationController)!
+        )
+        let presenter = Tab1Presenter(
+            view: vc as Tab1ViewProtocol,
+            router: router
+        )
+        vc.inject(presenter: presenter)
+    }*/
+    
+    
+    override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
+        switch item.tag {
+        case 0:
+            print("foo")
+        case 1:
+            print("fuck")
+        default:
+            fatalError()
+        }
+    }
 }
 extension TabBarController: TabBarControllerProtocol {}

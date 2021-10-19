@@ -207,8 +207,8 @@
 		054B0553271ABA2900B0A4D6 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				054B0554271AC0A400B0A4D6 /* TabBarPresenter.swift */,
 				0549134D271CFB7300186516 /* SceneDelegatePresenter.swift */,
+				054B0554271AC0A400B0A4D6 /* TabBarPresenter.swift */,
 				0549C809271A8AF40028DDB5 /* Tab1Presenter.swift */,
 				054B054F271AACDA00B0A4D6 /* Tab1SecondPresenter.swift */,
 			);

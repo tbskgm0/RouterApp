@@ -16,9 +16,11 @@ class Tab1ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        //self.presenter = Tab1Presenter(view: self, router: Tab1Router(viewController: self, navigator: self.navigationController!))
-        // Do any additional setup after loading the view.
+    }
+    
+    /// 画面生成時に使用する
+    func inject(presenter: Tab1Presenter) {
+        self.presenter = presenter
     }
     
     @IBAction func button(_ sender: Any) {
