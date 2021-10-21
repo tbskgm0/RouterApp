@@ -23,24 +23,6 @@ class TabBarController: UITabBarController {
         self.presenter = presenter
     }
     
-    /*
-    /// 
-    func push() {
-        let navigationController = self.viewControllers![0] as! UINavigationController
-        let vc = navigationController.topViewController as! Tab1ViewController
-        
-        let router = Tab1Router(
-            viewController: vc,
-            navigator: (vc.navigationController)!
-        )
-        let presenter = Tab1Presenter(
-            view: vc as Tab1ViewProtocol,
-            router: router
-        )
-        vc.inject(presenter: presenter)
-    }*/
-    
-    
     override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
         switch item.tag {
         case 0:
