@@ -22,16 +22,5 @@ class TabBarController: UITabBarController {
     func inject(presenter: TabBarPresentation) {
         self.presenter = presenter
     }
-    
-    override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
-        switch item.tag {
-        case 0:
-            print("foo")
-        case 1:
-            print("fuck")
-        default:
-            fatalError()
-        }
-    }
 }
 extension TabBarController: TabBarControllerProtocol {}
